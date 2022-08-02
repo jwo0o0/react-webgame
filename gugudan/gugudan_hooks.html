@@ -13,7 +13,7 @@
     <script type="text/babel">
         'use strict';
 
-        const GuGuDan = () => {
+        const GuGuDan = () => { //state가 바뀔 때마다 함수 자체가 다시 실행됨, class로 구현하면 render 함수만 다시 실행
             const [first, setFirst] = React.useState(2);
             const [second, setSecond] = React.useState(Math.ceil(Math.random() * 9));
             const [value, setValue] = React.useState('');
